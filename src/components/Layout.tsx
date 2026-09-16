@@ -30,7 +30,7 @@ const Layout = ({ children }: LayoutProps) => {
             to="/" 
             className="text-lg font-semibold tracking-tight text-foreground transition-opacity hover:opacity-70"
           >
-            Usha Sri
+            MR.KADURKA
           </Link>
 
           {/* Desktop Navigation */}
@@ -110,7 +110,7 @@ const Layout = ({ children }: LayoutProps) => {
       <footer className="border-t border-border">
         <div className="mx-auto max-w-5xl px-6 py-8">
           <p className="text-center text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Usha Sri Gudikandula. All rights reserved.
+            © {new Date().getFullYear()} ANIL KADURKA. All rights reserved.
           </p>
         </div>
       </footer>

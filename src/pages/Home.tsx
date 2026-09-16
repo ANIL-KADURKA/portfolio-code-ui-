@@ -8,10 +8,10 @@ const Home = () => {
       <div className="mx-auto max-w-5xl px-6 py-20">
         <div className="max-w-2xl">
           <p className="animate-fade-in text-sm font-medium uppercase tracking-widest text-muted-foreground">
-            Software Engineer
+            Reasearch & Development Engineer -1
           </p>
           <h1 className="animate-fade-in-delay-1 mt-4 text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
-            Usha Sri Gudikandula
+            ANIL KADURKA
           </h1>
           <p className="animate-fade-in-delay-2 mt-6 text-lg leading-relaxed text-muted-foreground">
             Full-stack engineer building scalable, end-to-end solutions that integrate 
@@ -27,7 +27,7 @@ const Home = () => {
               </Link>
             </Button>
             <Button variant="outline" asChild>
-              <a href="/resume.pdf" download>
+              <a href="/ANIL KADURKA_Resume_1.0.pdf" download>
                 <FileText className="mr-2 h-4 w-4" />
                 Download Resume
               </a>
@@ -36,7 +36,7 @@ const Home = () => {
 
           <div className="animate-fade-in-delay-3 mt-12 flex items-center gap-6">
             <a
-              href="https://github.com/USHASRI1112"
+              href="https://github.com/ANIL-KADURKA"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground transition-colors hover:text-foreground"
@@ -45,7 +45,7 @@ const Home = () => {
               <span className="sr-only">GitHub</span>
             </a>
             <a
-              href="https://www.linkedin.com/in/usha-sri-gudikandula"
+              href="https://www.linkedin.com/in/kadurka-anil/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground transition-colors hover:text-foreground"
@@ -54,7 +54,7 @@ const Home = () => {
               <span className="sr-only">LinkedIn</span>
             </a>
             <a
-              href="mailto:ushasrigudikandula456@gmail.com"
+              href="mailto:anil.kadurka7@gmail.com"
               className="text-muted-foreground transition-colors hover:text-foreground"
             >
               <Mail className="h-5 w-5" />

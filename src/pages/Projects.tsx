@@ -128,7 +128,7 @@ const ProjectCard = ({
 
 const Projects = () => {
   const [expandedProjectId, setExpandedProjectId] = useState<string | null>(null);
-  const [filter, setFilter] = useState<"all" | "professional" | "academic">("all");
+  const [filter, setFilter] = useState<"all" | "professional" | "academic" | "freelance">("all");
 
   const filteredProjects = projects.filter((project) => 
     filter === "all" ? true : project.type === filter
@@ -155,6 +155,7 @@ const Projects = () => {
               { key: "all", label: "All Projects" },
               { key: "professional", label: "Professional" },
               { key: "academic", label: "Academic" },
+              { key: "freelance", label: "FreeLance" },
             ].map((tab) => (
               <button
                 key={tab.key}

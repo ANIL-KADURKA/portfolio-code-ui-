@@ -6,7 +6,7 @@ export interface Project {
   techStack: string[];
   shortDescription: string;
   fullDescription: string[];
-  type: "professional" | "academic";
+  type: "professional" | "academic" | "freelance";
   github?: string;
   demo?: string;
   period?: string;
@@ -64,76 +64,114 @@ export interface ContactLink {
 // Projects Data
 export const projects: Project[] = [
   {
-    id: "canva-publish-intent",
-    title: "Canva – Publish Intent Integrations",
-    techStack: ["Node.js", "TypeScript", "React.js", "AWS", "Canva Apps SDK"],
-    shortDescription: "System connecting third-party apps to Canva's publishing flow.",
+    id: "kavach",
+    title: "Kavach – Railway Safety & Monitoring Platform",
+    techStack: ["Django", "Python", "PostgreSQL", "Redis", "Celery", "Angular", "Keycloak"],
+    shortDescription: "Railway safety platform for track, signalling, RFID, and infrastructure data management.",
     fullDescription: [
-      "Worked on the Publish Intent system used to connect third-party apps to Canva's publishing flow.",
-      "Built backend logic for app-specific settings, validation steps, and request handling.",
-      "Managed and maintained integrations for 9 connected applications, focusing on debugging and stability.",
-      "Improved reliability by identifying integration issues and strengthening error handling across the workflow.",
+      "Contributed to Kavach, a railway safety and monitoring platform developed at Vassar Digital AI.",
+      "Worked on backend services for railway layout, RFID/TIN plotting, signalling, and station data processing.",
+      "Implemented and maintained Django REST APIs, Redis-backed processing, Celery workers, and PostgreSQL integrations.",
+      "Worked across backend and frontend workflows to support railway design, validation, data visualization, and reporting.",
+      "Integrated authentication and role-based access using Keycloak and contributed to deployment and production troubleshooting."
     ],
     type: "professional",
-    period: "Aug 2025 – Present",
+    period: "Present",
     hasDemoAvailable: false,
     hasSourceCode: false,
   },
+
   {
-    id: "cloudtrip-flight-booking",
-    title: "CloudTrip – Flight Booking Web App",
-    techStack: ["React", "Ruby on Rails", "PostgreSQL", "Supabase"],
-    shortDescription: "Flight booking system with dynamic pricing and seat management.",
+    id: "mobilewise",
+    title: "MobileWise – Mobile Application Platform",
+    techStack: ["Angular js", "Node.js", "TypeScript", "Django", "Python", "PostgreSQL",],
+    shortDescription: "Mobile-focused platform for delivering application experiences and services.",
     fullDescription: [
-      "Built a flight booking system offering a simple, reliable, and efficient way to search, view, and book flights with dynamic pricing and seat availability.",
-      "Enabled users to search flights by source, destination, date, class type, and passengers.",
-      "Implemented dynamic pricing logic based on demand and availability.",
-      "Created a server-rendered UI using ERB templates, later rebuilt frontend with React for a more dynamic experience.",
-      "Migrated from file storage to PostgreSQL (Supabase) for persistence and scalability.",
-      "Implemented round-trip bookings with single-transaction seat updates and fare breakdowns.",
-      "Added recurring daily/weekly flight schedules through backend logic.",
+      "Worked on MobileWise, a mobile-focused application platform developed at Vassar Digital AI.",
+      "Contributed to application functionality, user-facing workflows, and backend integrations.",
+      "Worked across frontend and backend components to implement and maintain application features.",
     ],
     type: "professional",
-    period: "Jun 2025 – Aug 2025",
-    hasDemoAvailable: false,
-    hasSourceCode: true,
-    github:'https://github.com/USHASRI1112/cloudtrip'
+    period: "Present",
+    hasDemoAvailable: true,
+    hasSourceCode: false,
+    demo: "https://mobilewise.vassardigital.ai/splash",
   },
+
   {
-    id: "quickchat",
-    title: "QuickChat – Chatting Application",
-    techStack: ["React Native", "Express", "Socket.IO", "PostgreSQL", "AWS", "Firebase"],
-    shortDescription: "Real-time secure chat app with end-to-end encryption.",
+    id: "phone-ai",
+    title: "Phone AI",
+    techStack: ["GEN AI", "Prompting", "Node.js", "TypeScript", "Django", "Python", "PostgreSQL"],
+    shortDescription: "AI-powered phone application focused on intelligent communication experiences.",
     fullDescription: [
-      "Built a secure real-time chat application enabling users to connect instantly using their phone number.",
-      "Real-time chat with end-to-end encryption, phone number authentication, and email OTP verification.",
-      "Push/in-app notifications, unread message tracking, chat deletion, contact discovery, and user blocking.",
-      "Profile management with picture upload, account settings, and logout options.",
-      "Implemented Socket.IO for real-time messaging and Firebase Cloud Messaging for push notifications.",
+      "Worked on Phone AI, an AI-powered application developed at Vassar Digital AI.",
+      "Contributed to application workflows and integrations supporting AI-powered communication experiences.",
+      "Worked on frontend and backend functionality to improve application reliability and user experience.",
     ],
     type: "professional",
-    period: "Mar 2025 – May 2025",
+    period: "Present",
     hasDemoAvailable: false,
-    hasSourceCode: true,
-    github:'https://github.com/USHASRI1112/chat'
+    hasSourceCode: false,
   },
+
   {
-    id: "petbuddy",
-    title: "PetBuddy – Mobile Pet Care Management",
-    techStack: ["React Native", "Node.js", "Express", "MongoDB"],
-    shortDescription: "Mobile app for managing pet health records and schedules.",
+    id: "ai-cricket-prediction",
+    title: "AI Cricket Prediction App",
+    techStack: ["React Native", "Expo", "AI/ML"],
+    shortDescription: "AI-powered mobile app for cricket match predictions and insights.",
     fullDescription: [
-      "Built a mobile-first pet care management application that helps pet lovers organize health records, feeding schedules, and activities of their pets.",
-      "User and pet profile management with authentication and session handling.",
-      "Reminders for medications, vet appointments, and daily care; activity logging and photo gallery.",
-      "Directory for pet services and curated training/behaviour resources.",
-      "Emergency contacts with quick access to vets and services, with one-tap call functionality.",
+      "Built a mobile application that uses AI-based analysis to provide cricket match predictions and insights.",
+      "Developed the application using React Native and Expo for a cross-platform mobile experience.",
+      "Designed user flows for viewing match information, predictions, and AI-generated insights."
     ],
-    type: "professional",
-    period: "Dec 2024 – Feb 2025",
+    type: "freelance",
     hasDemoAvailable: false,
-    github:'https://github.com/USHASRI1112/petbuddy',
-    hasSourceCode: true,
+    hasSourceCode: false,
+  },
+
+  {
+    id: "hyperlocal",
+    title: "HyperLocal",
+    techStack: ["React Native", "Expo", "TypeScript"],
+    shortDescription: "Hyperlocal mobile app connecting users with nearby businesses and services.",
+    fullDescription: [
+      "Built a hyperlocal mobile application using React Native and Expo.",
+      "Developed mobile workflows for discovering and interacting with nearby businesses and services.",
+      "Implemented application screens, navigation, user interactions, and supporting API integrations."
+    ],
+    type: "freelance",
+    hasDemoAvailable: false,
+    hasSourceCode: false,
+  },
+
+  {
+    id: "zippy-routes",
+    title: "Zippy Routes",
+    techStack: ["React Native", "Expo", "TypeScript"],
+    shortDescription: "Mobile application for route and transportation-related services.",
+    fullDescription: [
+      "Built a cross-platform mobile application using React Native and Expo.",
+      "Developed user flows for route-related information and transportation services.",
+      "Implemented responsive mobile screens, navigation, and API integrations."
+    ],
+    type: "freelance",
+    hasDemoAvailable: false,
+    hasSourceCode: false,
+  },
+
+  {
+    id: "bus-connect",
+    title: "Bus Connect",
+    techStack: ["React Native", "Expo", "TypeScript"],
+    shortDescription: "Mobile application focused on bus and public transportation connectivity.",
+    fullDescription: [
+      "Built a cross-platform bus transportation mobile application using React Native and Expo.",
+      "Developed mobile workflows for accessing bus and route-related information.",
+      "Implemented application screens, navigation, and API integrations for the mobile experience."
+    ],
+    type: "freelance",
+    hasDemoAvailable: false,
+    hasSourceCode: false,
   },
   {
     id: "fingrow",
@@ -150,28 +188,8 @@ export const projects: Project[] = [
     type: "professional",
     period: "Sep 2024 – Nov 2024",
     hasDemoAvailable: false,
-    github:"https://github.com/USHASRI1112/fingrow",
+    github: "https://github.com/USHASRI1112/fingrow",
     hasSourceCode: true,
-  },
-  {
-    id: "hanami-ecommerce",
-    title: "Hanami – E-Commerce Web Application",
-    techStack: ["React", "Node.js", "Express", "MongoDB", "REST APIs"],
-    shortDescription: "Modern e-commerce web app for clothing store with cart and wishlist.",
-    fullDescription: [
-      "Built a modern e-commerce web application for Hanami, a clothing store.",
-      "Product showcase with responsive cards showing images, prices, ratings, availability, and discount badges.",
-      "Wishlist & Notifications: Heart-based wishlist toggle and 'Notify Me' option with toast alerts.",
-      "Cart management with live cart count, quantity adjustment, remove confirmation, and order placement flow.",
-      "Live search to filter products by name with fallback message when no matches found.",
-      "Individual product pages with size selection, wishlist/cart integration, and stock-aware button states.",
-      "Checkout flow with order confirmation showing total bill and thank-you message.",
-    ],
-    type: "professional",
-    period: "Jul 2024 – Aug 2024",
-    hasDemoAvailable: false,
-    hasSourceCode: true,
-    github: "https://github.com/USHASRI1112/hanami"
   },
   {
     id: "grocery-store",
@@ -187,23 +205,6 @@ export const projects: Project[] = [
     github: "https://github.com/USHASRI1112/GROCERY_STORE_CRON_JOBS",
     hasDemoAvailable: false,
     hasSourceCode: true,
-  },
-  {
-    id: "kaggle-sentiment",
-    title: "Kaggle Competition – Sentiment Analysis",
-    techStack: ["Pandas", "NumPy", "SciPy", "Scikit-learn"],
-    shortDescription: "Sentiment analysis of movie reviews with ML algorithms.",
-    fullDescription: [
-      "Competed in a Kaggle competition focused on sentiment analysis of movie reviews.",
-      "Conducted comprehensive data preprocessing using Pandas for data manipulation.",
-      "Applied Logistic Regression, XGBoost, and AdaBoost algorithms.",
-      "Achieved an accuracy score of 0.81482 in the competition.",
-    ],
-    type: "academic",
-    github: "https://github.com/USHASRI1112/KaggleCompetition",
-    hasDemoAvailable: false,
-    hasSourceCode: true,
-    // demo:"https://github.com/USHASRI1112/KaggleCompetition",
   },
 ];
 
@@ -334,30 +335,61 @@ export const certifications: Certification[] = [
 ];
 
 // Experience Data
+
 export const experiences: Experience[] = [
   {
-    id: "everest-swe",
-    title: "Software Engineer",
-    company: "Everest Engineering",
+    id: "vassar-rd-engineer",
+    title: "R&D Engineer-1",
+    company: "Vassar Labs / VassarDigital.ai",
     type: "Full-Time",
-    period: "September 2024 – Present",
+    period: "May 2024 – Present",
     description: [
-      "Design, develop, and maintain backend systems and APIs to support scalable applications.",
-      "Integrate third-party services and external APIs to enhance application functionality.",
-      "Troubleshoot, debug, and resolve production issues to ensure application reliability and uptime.",
-      "Collaborate with cross-functional teams to implement new features and improve workflows efficiently.",
-      "Follow best practices in coding, testing, and deployment to deliver high-quality software solutions.",
+      "Work across AI/GenAI, backend engineering, automation, and domain-specific software solutions.",
+      "KAVACH: Contribute to railway technology solutions involving engineering data processing, backend workflows, validation pipelines, and system design.",
+      "MobilWise: Worked on a drag-and-drop mobile application creation platform that enables users to visually build mobile applications.",
+      "Phone AI: Worked on an AI-powered phone proof of concept involving conversational AI, backend integration, and application workflows.",
+      "Build and maintain backend services and APIs using Python, Django, and Django REST Framework, with database and data-processing workflows.",
     ],
   },
-  {
-    id: "everest-intern",
-    title: "Software Engineer Intern",
-    company: "Everest Engineering",
-    type: "Internship",
-    period: "February 2024 – August 2024",
+ {
+   id: "purejobs-application-developer",
+  title: "Application Developer & Technical Advisor",
+    company: "PureJobs Technologies",
+    type: "Part-Time",
+    period: "January 2026 – Present",
     description: [
-      "Gained hands-on experience in software development, including designing backend systems, working with databases, writing tests, following DevOps workflows to deploy and maintain and developing frontend features for web and mobile applications.",
-      "Improved problem-solving, collaboration, and coding practices by contributing to real-world projects, learning to work effectively in a team, and delivering reliable, high-quality solutions.",
+      "Working as a part-time Application Developer and Technical Advisor at PureJobs Technologies.",
+      "Developed multiple cross-platform mobile applications using React Native and Expo, including an AI-based Cricket Prediction app, HyperLocal, Zippy Routes, and Bus Connect.",
+      "Designed and implemented mobile application workflows, reusable components, navigation, and API integrations.",
+      "Provided technical guidance on application architecture, development decisions, and technology selection.",
+      "Worked across application development and technical consulting to deliver and improve product features."
+    ],
+
+  },
+  {
+    id: "tech-at-core-frontend",
+    title: "Frontend Developer",
+    company: "Tech at Core",
+    type: "Full-Time",
+    period: "January 2024 – May 2024",
+    description: [
+      "Developed responsive and reusable frontend components for internal enterprise applications.",
+      "Worked on the T-Beeja HR project, contributing to user interfaces and workflows for internal HR operations.",
+      "Contributed to the CRMS Portal by developing frontend features and integrating application interfaces with backend APIs.",
+      "Worked with modern JavaScript-based frontend development and component-driven UI architecture.",
+    ],
+  },
+  
+  {
+    id: "nxtwave",
+    title: "Software Development Trainee",
+    company: "NxtWave",
+    type: "apprenticeship",
+    period: "2022 – 2023",
+    description: [
+      "Developed practical software development skills through hands-on learning and project-based work.",
+      "Worked with programming, web development, problem-solving, and software engineering concepts.",
+      "Built a strong foundation in frontend and backend development through structured technical learning.",
     ],
   },
   {
@@ -367,8 +399,8 @@ export const experiences: Experience[] = [
     type: "Internship",
     period: "March 2023 – June 2023",
     description: [
-      "Engaged in a three-month remote internship at IIIT Hyderabad, exploring NLP by actively participating in the 'Introduction to NLP' course.",
-      "Curated the 'Human Annotated Headline Classification Dataset' for Telugu language, showcasing proficiency in data annotation and NLP tasks.",
+      "Completed a three-month remote internship focused on Natural Language Processing through the Introduction to NLP course.",
+      "Curated the Human Annotated Headline Classification Dataset for the Telugu language, gaining practical experience in data annotation and NLP tasks.",
     ],
   },
 ];
@@ -376,18 +408,25 @@ export const experiences: Experience[] = [
 // Education Data
 export const education: Education[] = [
   {
-    id: "iitm",
-    degree: "BS in Data Science and Applications",
-    institution: "IIT Madras",
-    period: "2020 – 2024",
-    // grade: "CGPA: 8",
-  },
-  {
     id: "rgukt",
     degree: "B.Tech in Computer Science and Engineering",
     institution: "Rajiv Gandhi University of Knowledge Technologies, Basar",
     period: "2020 – 2024",
-    // grade: "CGPA: 8.5",
+    grade: "CGPA: 8.8",
+  },
+  {
+    id: "rgukt-b",
+    degree: "PUC in MPC",
+    institution: "Rajiv Gandhi University of Knowledge Technologies, Basar",
+    period: "2018 – 2020",
+    grade: "CGPA: 9.9",
+  },
+  {
+    id: "prs",
+    degree: "SSC in MPC",
+    institution: "Paramita Group of Instuitions",
+    period: "2018",
+    grade: "CGPA: 10",
   },
 ];
 
@@ -396,37 +435,37 @@ export const contactLinks: ContactLink[] = [
   {
     id: "email",
     label: "Email",
-    value: "ushasrigudikandula456@gmail.com",
-    href: "mailto:ushasrigudikandula456@gmail.com",
+    value: "anil.kadurka7@gmail.com",
+    href: "mailto:anil.kadurka7@gmail.com",
     iconName: "Mail",
   },
   {
     id: "phone",
     label: "Phone",
-    value: "+91 6303961097",
-    href: "tel:+916303961097",
+    value: "+91 9346532559",
+    href: "tel:+919346532559",
     iconName: "Phone",
   },
   {
     id: "github",
     label: "GitHub",
-    value: "USHASRI1112",
-    href: "https://github.com/USHASRI1112",
+    value: "ANIL-KADURKA",
+    href: "https://github.com/ANIL-KADURKA",
     iconName: "Github",
   },
   {
     id: "linkedin",
     label: "LinkedIn",
-    value: "usha-sri-gudikandula",
-    href: "https://www.linkedin.com/in/usha-sri-gudikandula",
+    value: "KADURKA-ANIL",
+    href: "https://www.linkedin.com/in/kadurka-anil/",
     iconName: "Linkedin",
   },
 ];
 
 // Personal Info
 export const personalInfo = {
-  name: "Usha Sri Gudikandula",
-  title: "Software Engineer",
+  name: "ANIL KADURKA",
+  title: "R&D Engineer-1",
   tagline: "Building scalable, end-to-end solutions that integrate robust backend systems with intuitive, responsive frontends.",
   about: [
     "I'm a Software Engineer at Everest Engineering with a passion for Full Stack Development and AI. I specialize in creating end-to-end solutions that combine robust backend systems with intuitive, responsive frontends.",
