@@ -38,7 +38,7 @@ const Contact = () => {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          to: "ushasrigudikandula456@gmail.com",
+          to: "anil.kadurka7@gmail.com",
           subject: "New message from Portfolio Contact Form",
           message: `Name: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`,
           from_name: formData.name,
